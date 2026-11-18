@@ -87,7 +87,7 @@
     /* ----- Your assistant's main colors ----- */
     --primary-color: #dad7e2;   /* Main brand color (deep violet). Used in the header gradient, user message bubbles, buttons, the outline around a box you click into, and the 1st typing dot. */
     --secondary-color: #48a1d5; /* Partner color (almost black). It is the second half of every gradient (header, user bubbles, buttons) and the 2nd typing dot. Try a bright color like #e05cc8 (pink) for a bolder look. */
-    --accent: #ef7613;          /* Highlight color (sunny yellow). Used for headings inside the bot's replies and the 3rd typing dot. */
+    --accent: #bfc2de;          /* Highlight color (sunny yellow). Used for headings inside the bot's replies and the 3rd typing dot. */
 
     /* ----- Backgrounds & text ----- */
     --background: #ffffff;      /* The color behind the whole page (dark navy). */
@@ -161,7 +161,7 @@ body {
     padding: 2.5rem 2rem 2.75rem; /* Space inside the banner: 2.5rem top, 2rem left and right, 2.75rem bottom. Bigger = taller banner. */
     text-align: center;         /* Centers the title and text. Try left or right. */
     background: var(--brand-gradient); /* Fills the banner with your primary-to-secondary gradient. */
-    border-bottom: 1px solid var(--border); /* A thin line along the bottom: 1px thick, solid, in the border color. */
+    border-bottom: 1px gradient var(--border); /* A thin line along the bottom: 1px thick, solid, in the border color. */
     box-shadow: var(--shadow);  /* Adds the shadow under the banner. */
 }
 
@@ -173,7 +173,7 @@ body {
     inset: 0;                   /* ...stretched to touch all four edges. */
     background: linear-gradient(115deg, transparent 40%, rgba(255, 255, 255, 0.25) 50%, transparent 60%); /* A thin diagonal stripe of see-through white (the "shine"), with clear space on both sides. */
     transform: translateX(-120%); /* Starts the shine pushed off to the left, out of sight. */
-    animation: shine 6s ease-in-out infinite; /* Runs the "shine" animation below: 6 seconds per sweep, smooth start and stop, forever. Set to "none" to turn it off. */
+    animation: shine 4s ease-in-out infinite; /* Runs the "shine" animation below: 6 seconds per sweep, smooth start and stop, forever. Set to "none" to turn it off. */
 }
 
 /* @keyframes describes an animation step by step.
@@ -192,7 +192,7 @@ body {
     width: 74px;                /* Width of the circle. */
     height: 74px;               /* Height of the circle. Keep it the same as the width so it stays round. */
     margin-bottom: 0.75rem;     /* Space between the circle and the title below it. */
-    font-size: 2.4rem;          /* Size of the emoji face. */
+    font-size: 2.10rem;          /* Size of the emoji face. */
     border-radius: 50%;         /* Rounds the corners all the way, turning the square into a circle. Try 20% for a rounded square. */
     background: rgba(255, 255, 255, 0.16); /* A see-through white fill. */
     box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.35), 0 8px 20px rgba(0, 0, 0, 0.3); /* Two shadows: "inset" draws a 2px white ring on the inside edge; the second is a soft dark shadow underneath. */
@@ -228,7 +228,7 @@ body {
 /* The big title ("Chatbot"). */
 .header h1 {
     position: relative;         /* Keeps the title above the shine layer. */
-    font-family: 'Baloo 2', 'Nunito', sans-serif; /* A rounder, bolder font for the title. Baloo 2 is loaded from Google Fonts in index.html. */
+    font-family: 'Playwrite AU SA Guides', 'Nunito', sans-serif; /* A rounder, bolder font for the title. Baloo 2 is loaded from Google Fonts in index.html. */
     font-size: 2.6rem;          /* Title size. */
     font-weight: 800;           /* How thick the letters are: 400 is normal, 700 is bold, 800 is extra bold. */
     letter-spacing: 0.5px;      /* Adds a little extra space between letters. */
