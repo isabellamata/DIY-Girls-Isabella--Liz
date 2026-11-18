@@ -85,16 +85,16 @@
    Change a variable once here, and every place that uses it changes. */
 :root {
     /* ----- Your assistant's main colors ----- */
-    --primary-color: #4721a7;   /* Main brand color (deep violet). Used in the header gradient, user message bubbles, buttons, the outline around a box you click into, and the 1st typing dot. */
-    --secondary-color: #0f050d; /* Partner color (almost black). It is the second half of every gradient (header, user bubbles, buttons) and the 2nd typing dot. Try a bright color like #e05cc8 (pink) for a bolder look. */
-    --accent: #ffd166;          /* Highlight color (sunny yellow). Used for headings inside the bot's replies and the 3rd typing dot. */
+    --primary-color: #dad7e2;   /* Main brand color (deep violet). Used in the header gradient, user message bubbles, buttons, the outline around a box you click into, and the 1st typing dot. */
+    --secondary-color: #acdbf6; /* Partner color (almost black). It is the second half of every gradient (header, user bubbles, buttons) and the 2nd typing dot. Try a bright color like #e05cc8 (pink) for a bolder look. */
+    --accent: #ef7613;          /* Highlight color (sunny yellow). Used for headings inside the bot's replies and the 3rd typing dot. */
 
     /* ----- Backgrounds & text ----- */
-    --background: #0f1030;      /* The color behind the whole page (dark navy). */
-    --surface: #1b1d44;         /* The color of the big cards: the chat box. */
-    --surface-2: #262a5a;       /* A slightly lighter color for "inner" areas: the bot's message bubbles and the typing boxes. */
-    --text-primary: #f2f1ff;    /* Main text color (almost white). If you make the backgrounds light, make this dark! */
-    --text-secondary: #a7abdb;  /* Softer text color (light lavender) for labels and small notes. */
+    --background: #ffffff;      /* The color behind the whole page (dark navy). */
+    --surface: #000006;         /* The color of the big cards: the chat box. */
+    --surface-2: #0418f3;       /* A slightly lighter color for "inner" areas: the bot's message bubbles and the typing boxes. */
+    --text-primary: #060000;    /* Main text color (almost white). If you make the backgrounds light, make this dark! */
+    --text-secondary: #f80909;  /* Softer text color (light lavender) for labels and small notes. */
 
     /* ----- The emoji your assistant uses as its face ----- */
     /* --bot-face: "🤖"; */       /* Shown in the round badge at the top AND next to every bot message. Swap in any emoji, like "🦄", "🐱" or "🌟". Keep the quotation marks! */
@@ -105,7 +105,7 @@
        3. Search "Picture version" and uncomment the two rules under it
           (one for the top badge, one for the bot's messages).
        To go back to an emoji, undo all three steps. */
-    --bot-face: url("assets/OIP.jpeg"); /* Your picture: the folder name, a slash, then the file name. */
+    --bot-face: url("assets/R.png"); /* Your picture: the folder name, a slash, then the file name. */
 
     /* ----- Motion ----- */
     --transition-speed: 0.25s;  /* How fast things smoothly change, like a button lifting when you hover over it. Bigger = slower (try 0.6s). */
@@ -113,7 +113,7 @@
     /* ----- (You usually don't need to touch these) ----- */
     --brand-gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); /* A smooth fade from your primary color to your secondary color. 135deg makes it run diagonally, from top-left to bottom-right. Try 90deg for left-to-right. */
     --border: rgba(54, 13, 13, 0.08);           /* The color of thin outlines around cards and bubbles. The 0.08 at the end makes it barely visible. */
-    --shadow: 0 20px 45px rgba(0, 0, 0, 0.45);  /* The shadow under the header and cards. The numbers are: sideways shift, downward shift (20px), blur amount (45px), then the shadow color. */
+    --shadow: 0 20px 45px rgba(138, 29, 29, 0.45);  /* The shadow under the header and cards. The numbers are: sideways shift, downward shift (20px), blur amount (45px), then the shadow color. */
 }
 
 
@@ -142,9 +142,9 @@ body {
        radial-gradient(SIZE at LEFT-POSITION TOP-POSITION, GLOW COLOR, fades to transparent by X%).
        The first glow in the list is drawn on top. */
     background:
-        radial-gradient(60rem 60rem at 12% -10%, rgba(139, 92, 255, 0.35), transparent 60%),  /* Purple glow peeking in from the top-left. */
-        radial-gradient(50rem 50rem at 110% 10%, rgba(224, 92, 200, 0.28), transparent 55%), /* Pink glow from just off the right edge. */
-        radial-gradient(45rem 45rem at 50% 120%, rgba(255, 209, 102, 0.14), transparent 60%),/* Faint yellow glow from below the bottom. */
+        radial-gradient(60rem 60rem at 12% -10%, rgba(14, 233, 29, 0.35), transparent 85%),  /* Purple glow peeking in from the top-left. */
+        radial-gradient(50rem 50rem at 110% 10%, rgba(92, 224, 96, 0.28), transparent 55%), /* Pink glow from just off the right edge. */
+        radial-gradient(45rem 45rem at 50% 120%, rgba(9, 138, 30, 0.14), transparent 60%),/* Faint yellow glow from below the bottom. */
         var(--background);       /* The solid background color underneath all the glows. */
     background-attachment: fixed; /* Keeps the glows still while you scroll, instead of scrolling away with the page. */
 }
@@ -436,7 +436,7 @@ body {
     align-self: flex-end;       /* Pushes your messages to the right side. */
     margin-left: auto;          /* Also pushes it right, as a backup. */
     background: var(--brand-gradient); /* Fills your bubble with the brand gradient. Try var(--accent) for a solid color. */
-    color: #fff;                /* White text. */
+    color: #d46161;                /* White text. */
     font-weight: 600;           /* Semi-bold text. */
     border-bottom-right-radius: 6px; /* Makes the bottom-right corner less round, like a speech-bubble "tail". */
     box-shadow: 0 8px 18px rgba(139, 92, 255, 0.35); /* A purple glow under the bubble. */

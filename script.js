@@ -38,7 +38,7 @@ function addMessage(type, content) {
 }
 
 // Send a message to the AI
-async function sendMessage() {
+async function sendmessage() {
     const input = document.getElementById('userInput');
     const message = input.value.trim();
 
