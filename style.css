@@ -86,13 +86,13 @@
 :root {
     /* ----- Your assistant's main colors ----- */
     --primary-color: #dad7e2;   /* Main brand color (deep violet). Used in the header gradient, user message bubbles, buttons, the outline around a box you click into, and the 1st typing dot. */
-    --secondary-color: #acdbf6; /* Partner color (almost black). It is the second half of every gradient (header, user bubbles, buttons) and the 2nd typing dot. Try a bright color like #e05cc8 (pink) for a bolder look. */
+    --secondary-color: #48a1d5; /* Partner color (almost black). It is the second half of every gradient (header, user bubbles, buttons) and the 2nd typing dot. Try a bright color like #e05cc8 (pink) for a bolder look. */
     --accent: #ef7613;          /* Highlight color (sunny yellow). Used for headings inside the bot's replies and the 3rd typing dot. */
 
     /* ----- Backgrounds & text ----- */
     --background: #ffffff;      /* The color behind the whole page (dark navy). */
     --surface: #000006;         /* The color of the big cards: the chat box. */
-    --surface-2: #0418f3;       /* A slightly lighter color for "inner" areas: the bot's message bubbles and the typing boxes. */
+    --surface-2: #1a28bc;       /* A slightly lighter color for "inner" areas: the bot's message bubbles and the typing boxes. */
     --text-primary: #060000;    /* Main text color (almost white). If you make the backgrounds light, make this dark! */
     --text-secondary: #f80909;  /* Softer text color (light lavender) for labels and small notes. */
 
@@ -264,8 +264,8 @@ body {
     width: 9px;                 /* Dot width. */
     height: 9px;                /* Dot height. */
     border-radius: 50%;         /* Makes it round. */
-    background: #43f5a0;        /* Bright green. Try #ff4d4d for red. */
-    box-shadow: 0 0 0 0 rgba(67, 245, 160, 0.7); /* A green glow ring that starts with size 0 (the pulse animation grows it). */
+    background: #74d586;        /* Bright green. Try #ff4d4d for red. */
+    box-shadow: 0 0 0 0 rgba(255, 16, 4, 0.7); /* A green glow ring that starts with size 0 (the pulse animation grows it). */
     animation: pulse 2s infinite; /* Runs the "pulse" animation below every 2 seconds, forever. */
 }
 
@@ -360,7 +360,7 @@ body {
     outline: none;              /* Removes the browser's default outline (we draw our own below). */
     border-color: var(--primary-color); /* The border turns your primary color. */
     background: #20244f;        /* The fill gets slightly darker. */
-    box-shadow: 0 0 0 4px rgba(139, 92, 255, 0.22); /* A soft 4px purple glow ring around the box. */
+    box-shadow: 0 0 0 4px rgba(213, 210, 220, 0.22); /* A soft 4px purple glow ring around the box. */
 }
 
 /* Extra rules just for the big multi-line box (System Prompt). */
@@ -378,7 +378,7 @@ body {
    ===================================================================== */
 .info-box {
     background: linear-gradient(135deg, rgba(139, 92, 255, 0.18), rgba(224, 92, 200, 0.14)); /* A faint purple-to-pink diagonal fill. */
-    border: 1px solid rgba(139, 92, 255, 0.4); /* A thin purple outline. */
+    border: 1px solid rgba(126, 106, 175, 0.4); /* A thin purple outline. */
     border-radius: 14px;        /* Rounded corners. */
     padding: 1rem 1.1rem;       /* Space inside the box. */
     margin-bottom: 1.35rem;     /* Space under the box. */
@@ -461,10 +461,10 @@ body {
     display: flex;              /* Flexbox, so the emoji can be centered... */
     align-items: center;        /* ...top to bottom... */
     justify-content: center;    /* ...and left to right. */
-    font-size: 1.25rem;         /* Size of the emoji. */
+    font-size: 2.27rem;         /* Size of the emoji. */
     border-radius: 50%;         /* Makes the face background a circle. */
     background: var(--brand-gradient); /* Fills the circle with your brand gradient. */
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35); /* Soft shadow under the circle. */
+    box-shadow: 0 6px 14px rgba(3, 80, 235, 0.35); /* Soft shadow under the circle. */
 }
 /* Picture version: uncomment the rule below (and set --bot-face to a
    url() above). Leave the emoji rule above alone: this rule comes later
